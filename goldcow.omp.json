@@ -67,29 +67,16 @@
           "template": " ᛋ ",
           "type": "exit"
         },
-    {
+        {
           "background": "#003543",
           "foreground": "#fff",
-      "properties": {
-        "time_format":"3:04PM"
-      },
-      "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " {{ .CurrentDate | date .Format }} ",
-          "type": "time"
-        },
-    {
-          "background": "#f36943",
-          "background_templates": [
-            "{{if eq \"Charging\" .State.String}}{{end}}",
-            "{{if eq \"Discharging\" .State.String}}{{end}}",
-            "{{if eq \"Full\" .State.String}}{{end}}"
-          ],
-          "foreground": "#fff",
+          "properties": {
+            "time_format":"3:04PM Jan 2 2006"
+          },
           "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 \uf583 ",
-          "type": "battery"
+            "style": "powerline",
+            "template": " {{ .CurrentDate | date .Format }} ",
+            "type": "time"
         }
       ],
       "type": "prompt"

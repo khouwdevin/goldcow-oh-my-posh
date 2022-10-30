@@ -10,8 +10,8 @@
           "properties": {
             "windows": "\uf179"
           },
-      "leading_diamond": "\ue0b6",
-      "style": "diamond",
+          "leading_diamond": "\u256d\u2500\ue0b6",
+          "style": "diamond",
           "template": "🐮",
           "type": "os"
         },
@@ -71,7 +71,7 @@
           "background": "#003543",
           "foreground": "#fff",
           "properties": {
-            "time_format":"3:04PM Jan 2 2006"
+            "time_format":"3:04PM Mon, 2 Jan 06"
           },
           "powerline_symbol": "\ue0b0",
             "style": "powerline",
@@ -88,14 +88,17 @@
         {
           "foreground": "#FFD700",
           "style": "plain",
-          "template": " \u26a1 ",
-          "type": "root"
+          "template": "\u2570\u2500",
+          "type": "text"
         },
         {
           "foreground": "#c79302",
+          "properties": {
+            "always_enabled": true
+          },
           "style": "plain",
-          "template": "⤷",
-          "type": "text"
+          "template": "\u276f\u276f",
+          "type": "exit"
         }
       ],
       "type": "prompt"
